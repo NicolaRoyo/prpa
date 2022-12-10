@@ -1,11 +1,15 @@
-import React from 'react';
-import logo from './logo.svg';
+import OutreachList from './features/events/OutreachList';
+import Header from './components/Header';
+import Footer from './components/Footer';
 import './App.css';
+
 
 function App() {
   return (
     <div className="App">
-      Puerto Rican Police Association
+      <Header />
+      <OutreachList />
+      <Footer />
     </div>
   );
 }
