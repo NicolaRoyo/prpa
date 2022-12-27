@@ -1,8 +1,8 @@
 import { Card, CardImg, CardImgOverlay, CardTitle } from 'reactstrap';
 
-const OutreachCard = ({ outreach }) => {
+const OutreachCard = ({outreach}) => {
     const { image, name } = outreach;
-
+    
     return (
         <Card>
             <CardImg

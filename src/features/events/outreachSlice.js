@@ -1,9 +1,9 @@
-import OUTREACH from '../../app/shared/outreach.js';
+import { OUTREACH } from "../../app/shared/OUTREACH";
 
 export const selectAllOutreach = () => {
     return OUTREACH;
 };
 
-export const selectRandomOutreach = () => {
-    return OUTREACH[Math.floor(OUTREACH.length * Math.random())];
+export const selectOutreachById = (id) => {
+    return OUTREACH.find((outreach) => outreach.id === id);
 };
