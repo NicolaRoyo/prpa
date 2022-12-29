@@ -5,7 +5,8 @@ import OutreachDirectoryPage from './pages/OutreachDirectoryPage';
 import HomePage from './pages/HomePage';
 import ContactPage from './pages/ContactPage';
 import AboutPage from './pages/AboutPage';
-import BoardMembersPage from './pages/BoardMembersPage'
+import BoardMembersPage from './pages/BoardMembersPage';
+import PartnershipsPage from './pages/PartnershipsPage';
 import './App.css';
 
 function App() {
@@ -14,10 +15,12 @@ function App() {
       <Header />
       <Routes> 
         <Route path='/' element={<HomePage />} />
-        <Route path='contact' element={<ContactPage />} />
+        
         <Route path='directory' element={<OutreachDirectoryPage />} />
         <Route path='about' element={<AboutPage />} />
         <Route path='board_members' element={<BoardMembersPage />} />
+        <Route path='partnerships' element={<PartnershipsPage />} />
+        <Route path='contact' element={<ContactPage />} />
       </Routes>
       <Footer />  
     </div>
