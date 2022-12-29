@@ -1,6 +1,6 @@
 import { Col, Row, Container, Card, CardBody, CardHeader, CardText } from 'reactstrap';
 import SubHeader from '../components/SubHeader';
-import PartnershipsList from '../features/partnerships/PartnershipsList';
+
 
 const AboutPage = () => {
     return (
@@ -32,14 +32,6 @@ const AboutPage = () => {
                         </CardBody>
                     </Card>
                 </Col>
-                
-            </Row>
-
-            <Row className='row-content'>
-                <Col xs='12'>
-                    <h3>Partnership Links</h3>
-                </Col>
-                    <PartnershipsList />
             </Row>
         </Container>
     )
