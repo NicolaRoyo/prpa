@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Container, Row, Col, Button } from 'reactstrap';
+import { Container, Row, Col } from 'reactstrap';
 import OutreachDetail from '../features/events/OutreachDetail';
 import OutreachList from '../features/events/OutreachList';
 import { selectOutreachById } from '../features/events/outreachSlice';
