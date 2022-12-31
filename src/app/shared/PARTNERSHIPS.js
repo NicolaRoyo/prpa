@@ -13,7 +13,7 @@ import workshopLogo from '../assets/img/partnerships/partner11workshop4200-01.pn
 import ashlandLogo from '../assets/img/partnerships/partner12ashland-flowers-logo.png';
 import paleteriaLogo from '../assets/img/partnerships/partner13paleteria-michoacan.jpg';
 
-export const PARTNERS = [
+export const PARTNERSHIPS = [
     {
         id: 0,
         name: 'National Latino Law Enforcement Organization',

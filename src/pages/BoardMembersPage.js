@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Container, Row, Col } from 'reactstrap';
+import SubHeader from '../components/SubHeader';
 import BoardDetail from '../features/boardMembers/BoardDetail';
 import BoardList from '../features/boardMembers/BoardList';
 import { selectBoardById } from '../features/boardMembers/boardSlice';
@@ -11,15 +12,15 @@ const BoardMembersPage = () => {
 
     return (
         <Container>
-            <Row>
-                <Col sm='5' md='7'>
-                    <BoardList setBoardId={setBoardId} />
-                </Col>
-                <Col sm='7' md='5'>
-                    <BoardDetail board={selectedBoard} />
-                </Col>
-            </Row>
-
+            <SubHeader current='Board Members' />
+                <Row>
+                    <Col sm='6'md='8' >
+                        <BoardList setBoardId={setBoardId} />
+                    </Col>
+                    <Col sm='6' md='4' >
+                        <BoardDetail board={selectedBoard} />
+                    </Col>
+                </Row>
         </Container>
     );
 };

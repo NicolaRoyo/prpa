@@ -6,6 +6,7 @@ import {
     NavbarToggler,
     Nav,
     NavItem,
+    Container,
  } from 'reactstrap';
 import { NavLink } from 'react-router-dom';
 import PRPALogo from '../app/assets/img/logo1.jpg'
@@ -15,23 +16,24 @@ const Header = () => {
 
     return (
         <Navbar 
-            dark color='primary' 
+            dark 
             sticky='top' 
             expand='md'
         >
-            <NavbarBrand href='/' className='ms-5'>
+            <NavbarBrand href='/' className='ms-4 mt-4'>
                 <img 
                     src={PRPALogo} 
                     alt='Puerto Rican Police Association Logo'
-                    className='float-start' 
+                    className='float-start'
                 />
-                <h1 className='mt-1' > Puerto Rican Police Association </h1>
+                <p className='mb-4 vertical' > Puerto Rican Police Association </p>
             </NavbarBrand>
+            <Container className='m-1'>
             <NavbarToggler 
                 onClick={() => setMenuOpen(!menuOpen)}
             />
             <Collapse navbar isOpen={menuOpen}>
-                <Nav className='ms-auto' navbar>
+                <Nav pills navbar>
                     <NavItem>
                         <NavLink className='nav-link' to='/'>
                             <i className='fa fa-home fa-lg' /> Home 
@@ -64,8 +66,11 @@ const Header = () => {
                     </NavItem>
                 </Nav>
             </Collapse>
+            </Container>
         </Navbar>
   );
 };
+
+
 
 export default Header;

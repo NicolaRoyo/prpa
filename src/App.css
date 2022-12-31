@@ -2,11 +2,8 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
-h1,
-h2,
-h3,
 .card-body > .card-title {
-  font-family: 'Lobster', cursive;
+  font-family: 'Roboto', Sans-serif;
 }
 
 .card-title {
@@ -18,15 +15,20 @@ h2 {
   color: #3046c5;
 }
 
-.card-img-overlay .card-title {
+.card-img-overlay .card-title, .card-subtitle {
   color: white;
   background-color: rgba(0, 0, 0, 0.5);
+  margin: 0;
+}
+.row-content {
+  align-content: center;
+
 }
 
-.row-content {
+.row-content2 {
   padding: 50px 0;
   border-bottom: 1px ridge;
-  min-height: 200px;
+ 
 }
 
 .site-footer {
@@ -35,23 +37,26 @@ h2 {
   margin-top: 2rem;
 }
 
-.navbar-brand {
-  max-width: 4rem;
-  margin-right: 2rem;
-}
+/* .navbar-brand {
+  max-width: 5rem;
+  margin-inline-end: 5rem;
 
-.navbar-brand img {
-  width: 200%;
-  height: 200%;
+} */
+
+/* .navbar-brand img {
+  width: 300%;
+  height: 300%;
   margin-right: 2rem;
   max-width: 8rem;
-}
+} */
 
 .navbar-dark {
   background-color: #3f10e8;
   background-image: linear-gradient(to right, #1a2668, #000ac9, #0b2e78);
-  margin-bottom: 2rem;
+  /* margin-bottom: 2rem;
   min-height: 8rem;
+  justify-content: flex-end; */
+  
 }
 
 .page-enter {

@@ -11,49 +11,49 @@ export const BOARD = [
         id: 0,
         name: 'Waldemar Cruz',
         image: waldemarPhoto ,
-        description:
-            'President'
+        position: 'President',
+        description: 'Biography coming soon!'
     },
     {
         id: 1,
         name: 'Marilyn Gomez',
         image: marilynPhoto ,
-        description:
-            'Vice President'
+        position: 'Vice President',
+        description: 'Biography coming soon!'
     },
     {
         id: 2,
         name: 'Carlos Rivera',
         image: carlosPhoto ,
-        description:
-            'Secretary / Former President'
+        position: 'Secretary / Former President',
+        description: 'Biography coming soon!'
     },
     {
         id: 3,
         name: 'Ray Calixto',
         image: rayPhoto ,
-        description:
-            'Sergeant-at-Arms'
+        position: 'Sergeant-at-Arms',
+        description: 'Biography coming soon!'
     },
     {
         id: 4,
         name: 'Luis Arroyo',
         image: luisPhoto ,
-        description:
-            'Treasurer'
+        position: 'Treasurer',
+        description: 'Biography coming soon!'
     },
     {
         id: 5,
         name: 'Tony Cortez',
         image: tonyPhoto ,
-        description:
-            'Board Member'
+        position:'Board Member',
+        description: 'Biography coming soon!'
     },
     {
         id: 6,
         name: 'Edwin Reyes',
         image: edwinPhoto ,
-        description:
-            'Board Member / General Counsel'
+        position:'Board Member / General Counsel',
+        description: 'Biography coming soon!'
     }
 ];
