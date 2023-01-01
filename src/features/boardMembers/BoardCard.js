@@ -15,7 +15,7 @@ const BoardCard = ({board}) => {
             />
             <CardImgOverlay className= 'd-flex flex-column justify-content-end'>
                 <CardTitle className="text-center">{name}</CardTitle>
-                    <CardSubtitle className='text-center'>{position}</CardSubtitle>
+                <CardSubtitle className='text-center'>{position}</CardSubtitle>
             </CardImgOverlay>
         </Card>
         </Col>

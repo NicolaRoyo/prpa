@@ -43,7 +43,7 @@ const ContactPage = () => {
             </Row>
             <Row className='row-content'>
                 <Col xs='12'>
-                    <h2>Send Us A Message</h2>
+                    <h2 className="message">Send Us A Message</h2>
                     <hr />
                 </Col>
                 <Col md='10'>

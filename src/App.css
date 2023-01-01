@@ -2,23 +2,37 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
+h1,
+h2,
+h3,
 .card-body > .card-title {
   font-family: 'Roboto', Sans-serif;
 }
 
-.card-title {
-  font-weight: 500;
-  font-size: 1.25rem;
-}
 
 h2 {
-  color: #3046c5;
+  color: red;
 }
+.message {color: blue;
 
+}
+.card-title {
+  font-weight: 550;
+  font-size: 1.25rem;
+}
+.card-subtitle{
+  font-weight: 400;
+}
 .card-img-overlay .card-title, .card-subtitle {
   color: white;
   background-color: rgba(0, 0, 0, 0.5);
   margin: 0;
+}
+.board-detail {
+    color: white;
+    background-color: #ef3400;
+    font-weight: 700;
+    font-size: 1.3rem;
 }
 .row-content {
   align-content: center;
