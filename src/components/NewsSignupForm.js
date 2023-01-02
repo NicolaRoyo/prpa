@@ -19,12 +19,17 @@ const NewsSignupForm = () => {
             validate={validateNewsSignupForm}
         >
             <Form>
-                <h2>​Sign up for our newsletter to get PRPA event reminders!</h2>
-                <FormGroup row>
-                    <Label htmlFor='email' md='2'>
+                <h3 
+                    className='text-primary' 
+                    style={{textAlign: "center"}}
+                >
+                    Sign up for our newsletter to get PRPA event reminders!
+                </h3>
+                <FormGroup row >
+                    <Label htmlFor='email' xs='2' style={{textAlign: "center" }} >
                         Email
                     </Label>
-                    <Col md='10'>
+                    <Col md='8'>
                         <Field
                             name='email'
                             placeholder='Email' 
@@ -37,9 +42,9 @@ const NewsSignupForm = () => {
                     </Col>
                 </FormGroup>
                 <FormGroup row>
-                    <Col md={{ size: 10, offset: 2 }}>
+                    <Col md={{ size: 4, offset: 2 }} >
                         <Button type='submit' color='primary'>
-                            Send Message
+                            SUBSCRIBE
                         </Button>
                     </Col>
                 </FormGroup>
@@ -47,5 +52,7 @@ const NewsSignupForm = () => {
         </Formik>
     );
 };
+
+
 
 export default NewsSignupForm;
