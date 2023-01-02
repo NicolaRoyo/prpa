@@ -10,7 +10,7 @@ function OutreachCarousel() {
           <img
             className="d-block w-100"
             src={BasketBallGame}
-            alt="First slide"
+            alt="Basketball game with youth"
           />
           <Carousel.Caption>
             <h3>Community Outreach</h3>
@@ -21,7 +21,7 @@ function OutreachCarousel() {
           <img
             className="d-block w-100"
             src={BasketBallGame2}
-            alt="Second slide"
+            alt="Basketball game with youth"
           />
   
           <Carousel.Caption>
@@ -33,7 +33,7 @@ function OutreachCarousel() {
           <img
             className="d-block w-100"
             src={HolidayCards}
-            alt="Third slide"
+            alt="Holiday Cards"
           />
   
           <Carousel.Caption>
