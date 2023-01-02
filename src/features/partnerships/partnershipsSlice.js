@@ -58,12 +58,3 @@ export const selectPartnershipsById = (id) => {
 //    return state.partnerships.partnershipsArray; 
 // };
 
-// export const selectFeaturedPartnerships = (state) => {
-//     return {
-//         featuredItem: state.partnerships.partnershipsArray.find(
-//             (partnerships) => partnerships.featured
-//         ),
-//         isLoading: state.partnerships.isLoading,
-//         errMsg: state.partnerships.errMsg
-//     };
-// };

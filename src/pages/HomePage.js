@@ -1,6 +1,7 @@
 import { Container } from 'reactstrap';
 import SubHeader from '../components/SubHeader';
-import OutreachCarousel from '../components/Carousel';
+import OutreachCarousel from '../components/OutReachCarousel';
+import GalaCarousel from '../components/GalaCarousel';
 import NewsSignupForm from '../components/NewsSignupForm';
 
 const HomePage = () => {
@@ -8,7 +9,7 @@ const HomePage = () => {
     <Container>
         <SubHeader current='Home' />
             <OutreachCarousel /> 
-
+            <GalaCarousel />
             <NewsSignupForm />
     </Container>
 

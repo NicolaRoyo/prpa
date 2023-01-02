@@ -11,7 +11,7 @@ const Footer = () => {
                             size: 4, 
                             offset: 1 
                         }} 
-                        sm='2'
+                        sm='3'
                     >
                         <h5>Links</h5>
                         <ul className='list-unstyled'>
@@ -19,10 +19,19 @@ const Footer = () => {
                                 <Link to='/'>Home</Link>
                             </li>
                             <li>
-                                <Link to='/directory'>Directory</Link>
+                                <Link to='/about'>About</Link>
                             </li>
                             <li>
-                                <Link to='/about'>About</Link>
+                                <Link to='/directory'>Event Directory</Link>
+                            </li>
+                            <li>
+                                <Link to='/board'>Board Members</Link>
+                            </li>
+                            <li>
+                                <Link to='/partnerships'>Partnerships</Link>
+                            </li>
+                            <li>
+                                <Link to='/news'>News</Link>
                             </li>
                             <li>
                                 <Link to='/contact'>Contact</Link>
@@ -35,12 +44,6 @@ const Footer = () => {
                         className='text-center'
                     >
                         <h5>Social</h5>
-                        {/* <a
-                            className='btn btn-social-icon btn-instagram'
-                            href='http://instagram.com/'
-                        >
-                            <i className='fa fa-instagram' />
-                        </a>{' '} */}
                         <a
                             className='btn btn-social-icon btn-facebook'
                             href='http://www.facebook.com/'
@@ -63,15 +66,11 @@ const Footer = () => {
                             className='btn btn-link'
                             href='tel:+17738887176'
                         >
-                            <i className='fa fa-phone' /> 1(773)888-7176
+                            <i className='fa fa-phone fa-lg' /> 1(773)888-7176
                         </a>
                         <br />
-                        <a
-                            // role='button'
-                            // className='btn btn-link'
-                            // href='mailto:notreal@notreal.co'
-                        >
-                            <i className='fa fa-envelope-o' /> 
+                    
+                            <i className='fa fa-envelope fa-lg' /> 
                             <br />
                             Puerto Rican Police Association
                             <br />
@@ -80,7 +79,6 @@ const Footer = () => {
                                 ​Suite 102   
                                 <br />
                                 Chicago  IL 60639
-                        </a>
                     </Col>  
                 </Row>
             </Container>

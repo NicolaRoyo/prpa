@@ -6,7 +6,7 @@ import {
     NavbarToggler,
     Nav,
     NavItem,
-    Container,
+
  } from 'reactstrap';
 import { NavLink } from 'react-router-dom';
 import PRPALogo from '../app/assets/img/logo1.jpg'
@@ -20,53 +20,58 @@ const Header = () => {
             sticky='top' 
             expand='md'
         >
-            <NavbarBrand href='/' className='ms-4 mt-4'>
+            <NavbarBrand className='ms-5' href='/' >
                 <img 
                     src={PRPALogo} 
                     alt='Puerto Rican Police Association Logo'
                     className='float-start'
                 />
-                <p className='mb-4 vertical' > Puerto Rican Police Association </p>
             </NavbarBrand>
-            <Container className='m-1'>
             <NavbarToggler 
                 onClick={() => setMenuOpen(!menuOpen)}
+                className='me-5'
             />
             <Collapse navbar isOpen={menuOpen}>
-                <Nav pills navbar>
+                <Nav  navbar pills className='navbar-nav'>
                     <NavItem>
                         <NavLink className='nav-link' to='/'>
                             <i className='fa fa-home fa-lg' /> Home 
                         </NavLink>
                     </NavItem>
                     <NavItem>
-                        <NavLink className='nav-link' to='/directory'>
-                            <i className='fa fa-list fa-lg' /> Directory 
+                        <NavLink className='nav-link' to='/about'>
+                            <i className='fa fa-info-circle fa-lg' /> About 
                         </NavLink>
+                
                     </NavItem>
                     <NavItem>
-                        <NavLink className='nav-link' to='/about'>
-                            <i className='fa fa-info fa-lg' /> About 
+                        <NavLink className='nav-link' to='/directory'>
+                            <i className='fa fa-list fa-lg' /> Event Directory
                         </NavLink>
+
                     </NavItem>
                     <NavItem>
                         <NavLink className='nav-link' to='/board_members'>
-                            <i className='fa fa-info fa-lg' /> Board Members 
+                            <i className='fa fa-users fa-lg' /> Board Members 
                         </NavLink>
                     </NavItem>
                     <NavItem>
                         <NavLink className='nav-link' to='/partnerships'>
-                            <i className='fa fa-info fa-lg' /> Partnerships 
+                            <i className='fa fa-handshake-o fa-lg' /> Partnerships 
+                        </NavLink>
+                    </NavItem>
+                    <NavItem>
+                        <NavLink className='nav-link' to='/news'>
+                            <i className='fa fa-newspaper-o fa-lg' /> News 
                         </NavLink>
                     </NavItem>
                     <NavItem>
                         <NavLink className='nav-link' to='/contact'>
-                            <i className='fa fa-address-card fa-lg' /> Contact
+                            <i className='fa fa-address-card-o fa-lg' /> Contact
                         </NavLink>
                     </NavItem>
                 </Nav>
             </Collapse>
-            </Container>
         </Navbar>
   );
 };

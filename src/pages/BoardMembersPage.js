@@ -13,11 +13,11 @@ const BoardMembersPage = () => {
     return (
         <Container>
             <SubHeader current='Board Members' />
-                <Row>
-                    <Col sm='6'md='8' >
+                <Row >
+                    <Col sm='5' md='7'  >
                         <BoardList setBoardId={setBoardId} />
                     </Col>
-                    <Col sm='6' md='4' >
+                    <Col  sm='7' md='5' >
                         <BoardDetail board={selectedBoard} />
                     </Col>
                 </Row>
