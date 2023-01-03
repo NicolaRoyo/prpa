@@ -1,7 +1,7 @@
 import { Col, Row, Container, Card, CardBody, CardHeader, CardImgOverlay, CardText, CardImg } from 'reactstrap';
 import SubHeader from '../components/SubHeader';
 import flagsParade from '../app/assets/img/prFlagsParade.jpg';
-
+import PartnershipsList from '../features/partnerships/PartnershipsList';
 
 const AboutPage = () => {
     return (
@@ -46,6 +46,12 @@ const AboutPage = () => {
                         </CardImgOverlay>
                     </Card>
                 </Col>
+            </Row>
+            <Row className='row-content'>
+                <Col xs='12'>
+                    <h3>Community Partnerships</h3>
+                </Col>
+                <PartnershipsList />
             </Row>
         </Container>
     )
