@@ -1,9 +1,26 @@
 import { OUTREACH } from "../../app/shared/OUTREACH";
+import { createSlice } from '@reduxjs/toolkit';
 
-export const selectAllOutreach = () => {
-    return OUTREACH;
+const initialState = {
+    outreachArray: OUTREACH
 };
 
-export const selectOutreachById = (id) => {
-    return OUTREACH.find((outreach) => outreach.id === id);
+const outreachSlice =createSlice({
+    name: 'outreach',
+    initialState
+});
+
+export const outreachReducer = outreachSlice.reducer;
+
+export const selectAllOutreach = (state) => {
+    return state.outreach.outreachArray;
 };
+
+export const selectOutreachById = (id) => (state) => {
+    return state.outreach.outreachArray.find(
+        (outreach) => outreach.id === parseInt(id)
+    );
+};
+
+
+

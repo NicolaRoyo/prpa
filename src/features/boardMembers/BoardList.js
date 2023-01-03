@@ -1,10 +1,12 @@
+import { useSelector } from "react-redux";
 import { Col, Row } from "reactstrap";
 import AnimatedBoardCard from "./AnimatedBoardCard";
 import { selectAllBoard } from "./boardSlice";
 
 const BoardList = ({ setBoardId }) => {
-   const boardMembers = selectAllBoard();
-
+   const boardMembers = useSelector(selectAllBoard);
+   console.log('board:', board);
+   
     return (
         <Row className='ms-auto' >
             {boardMembers.map((board) => {

@@ -1,9 +1,12 @@
+import { useSelector } from "react-redux";
 import { Col, Row } from "reactstrap";
 import OutreachCard from "./OutreachCard";
 import { selectAllOutreach } from "./outreachSlice";
 
 const OutreachList = ({ setOutreachId }) => {
-   const outreachEvents = selectAllOutreach();
+   const outreachEvents = useSelector(selectAllOutreach);
+   console.log('outreachEvents:', outreach);
+
 
     return (
         <Row className='ms-auto'>

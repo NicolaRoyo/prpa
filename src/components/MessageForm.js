@@ -106,19 +106,6 @@ const MessageForm = () => {
                     </Col>
                 </FormGroup>
                 <FormGroup row>
-                    {/* <Label htmlFor='comments' md='2'>
-                        Your Comments
-                    </Label>
-                    <Col md='10'>
-                        <Field 
-                            name='comments'
-                            as='textarea'
-                            row='12'
-                            className='form-control' 
-                        />
-                    </Col> */}
-                </FormGroup>
-                <FormGroup row>
                     <Col md={{ size: 10, offset: 2 }}>
                         <Button type='submit' color='primary'>
                             Send Message
@@ -126,7 +113,6 @@ const MessageForm = () => {
                     </Col>
                 </FormGroup>
             </Form>
-
         </Formik>
     );
 };
