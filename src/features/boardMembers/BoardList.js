@@ -1,5 +1,5 @@
 import { Col, Row } from "reactstrap";
-import BoardCard from "./BoardCard";
+import AnimatedBoardCard from "./AnimatedBoardCard";
 import { selectAllBoard } from "./boardSlice";
 
 const BoardList = ({ setBoardId }) => {
@@ -15,7 +15,7 @@ const BoardList = ({ setBoardId }) => {
                         key={board.id}
                         onClick={() => setBoardId(board.id)}
                     >
-                        <BoardCard board={board} />
+                        <AnimatedBoardCard board={board} />
                     </Col>
                 );
             })}

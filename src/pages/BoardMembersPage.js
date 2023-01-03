@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import SubHeader from '../components/SubHeader';
-import BoardDetail from '../features/boardMembers/BoardDetail';
+import BoardDetail from '../features/boardMembers/AnimatedBoardDetail';
 import BoardList from '../features/boardMembers/BoardList';
 import { selectBoardById } from '../features/boardMembers/boardSlice';
 
