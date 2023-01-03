@@ -25,7 +25,7 @@ const Footer = () => {
                                 <Link to='/directory'>Event Directory</Link>
                             </li>
                             <li>
-                                <Link to='/board'>Board Members</Link>
+                                <Link to='/board_members'>Board Members</Link>
                             </li>
                             <li>
                                 <Link to='/partnerships'>Partnerships</Link>

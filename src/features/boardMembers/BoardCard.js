@@ -1,4 +1,4 @@
-import { Card, CardImg, CardImgOverlay, CardTitle, Row, Col, CardSubtitle } from 'reactstrap';
+import { Card, CardImg, CardImgOverlay, CardTitle, CardSubtitle } from 'reactstrap';
 
 const BoardCard = ({board}) => {
     const { image, name, position } = board;
@@ -10,9 +10,14 @@ const BoardCard = ({board}) => {
                 src={image}
                 alt={name}
             />
-            <CardImgOverlay className= ' board d-flex flex-column justify-content-end'>
-                <CardTitle className="board text-center">{name}</CardTitle>
-                <CardSubtitle className='board text-center'>{position}</CardSubtitle>
+            <CardImgOverlay className="
+                board-img-overlay 
+                d-flex 
+                flex-column 
+                justify-content-end
+            ">
+                <CardTitle className='board-card-title text-center'>{name}</CardTitle>
+                <CardSubtitle className='board-card-subtitle text-center'>{position}</CardSubtitle>
             </CardImgOverlay>
         </Card>
     );
