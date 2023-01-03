@@ -21,7 +21,11 @@ const NewsSignupForm = () => {
             <Form>
                 <h3 
                     className='text-primary' 
-                    style={{textAlign: "center"}}
+                    style={{
+                        textAlign: "center",
+                        paddingTop: "30px",
+                        paddingBottom: "20px"
+                    }}
                 >
                     Sign up for our newsletter to get PRPA event reminders!
                 </h3>

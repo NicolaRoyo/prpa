@@ -5,7 +5,7 @@ import HolidayCards from '../app/assets/img/holidaycards.jpg';
 
 function OutreachCarousel() {
     return (
-      <Carousel fade>
+      <Carousel fade className='carousel'>
         <Carousel.Item>
           <img
             className="d-block w-100"

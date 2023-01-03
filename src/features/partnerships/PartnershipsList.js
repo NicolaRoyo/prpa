@@ -4,7 +4,7 @@ import Partnership from "../partnerships/Partnership";
 import { selectAllPartnerships } from "./partnershipsSlice";
 
 
-const PartnershipsList = () => {
+const PartnershipsList = (setPartnershipsId) => {
     const partnerships = useSelector(selectAllPartnerships);
 
     
@@ -12,13 +12,19 @@ const PartnershipsList = () => {
         <Col className='mt-4'>
                 {partnerships.map((partnership) => {
                     return (
-                        <div className='d-flex mb-5' key={partnership.id}>
-                            <Partnership partnership={partnership} />
-                        </div>
+                        <Col 
+                            md='8' 
+                            className='m-4' 
+                            key={partnership.id}
+                            onClick={() => setPartnershipsId(partnership.id)}
+                        >
+
+                        <Partnership partnership={partnership} />
+                        </Col>
                     );
                 })}
         </Col>
     );
 };
-
+ // 'd-flex mb-5' 
 export default PartnershipsList;

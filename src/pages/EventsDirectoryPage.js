@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useSelector } from 'react-redux';
 import { Container, Row, Col } from 'reactstrap';
 import OutreachDetail from '../features/events/OutreachDetail';
 import OutreachList from '../features/events/OutreachList';
@@ -7,7 +8,7 @@ import { selectOutreachById } from '../features/events/outreachSlice';
 const EventsDirectoryPage = () => {
 
     const [outreachId, setOutreachId] = useState(0);
-    const selectedOutreach = selectOutreachById(outreachId);
+    const selectedOutreach = useSelector(selectOutreachById(outreachId));
 
     return (
         <Container>

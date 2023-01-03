@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useSelector } from 'react-redux';
 import { Container, Row, Col } from 'reactstrap';
 import PartnershipsList from '../features/partnerships/PartnershipsList';
 import { selectPartnershipsById } from '../features/partnerships/partnershipsSlice';
@@ -8,16 +9,16 @@ import SubHeader from '../components/SubHeader';
 const PartnershipsPage = () => {
 
     const [partnershipsId, setPartnershipsId] = useState(0);
-    const selectedPartnerships = selectPartnershipsById(partnershipsId);
+    const selectedPartnerships = useSelector(selectPartnershipsById(partnershipsId));
 
     return (
         <Container>
             <SubHeader current='Partnerships' />
             <Row>
-                <Col sm='5' md='7'>
+                <Col >
                     <PartnershipsList setPartnershipsId={setPartnershipsId} />
                 </Col>
-                <Col sm='7' md='5'>
+                <Col >
                     <PartnershipsDetail partnerships={selectedPartnerships} />
                 </Col>
             </Row>

@@ -15,9 +15,9 @@ export const partnershipsReducer = partnershipsSlice.reducer;
 export const selectAllPartnerships= (state) => {
     return state.partnerships.partnershipsArray;
 };
-// I will make this a clickable feature 
-// export const selectPartnershipsById = (id) => (state) => {
-//     return state.partnerships.partnershipsArray.find(
-//         (partnerships) => partnerships.id === parseInt(id)
-//     );
-// };
+
+export const selectPartnershipsById = (id) => (state) => {
+    return state.partnerships.partnershipsArray.find(
+        (partnerships) => partnerships.id === parseInt(id)
+    );
+};
