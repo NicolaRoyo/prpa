@@ -1,6 +1,6 @@
 import { useSelector } from "react-redux";
 import { Col, Row } from "reactstrap";
-import OutreachCard from "./OutreachCard";
+import AnimatedOutreachCard from "./AnimatedOutreachCard";
 import { selectAllOutreach } from "./outreachSlice";
 
 const OutreachList = ({ setOutreachId }) => {
@@ -16,7 +16,7 @@ const OutreachList = ({ setOutreachId }) => {
                         key={outreach.id}
                         onClick={() => setOutreachId(outreach.id)}
                     >
-                        <OutreachCard outreach={outreach} />
+                        <AnimatedOutreachCard outreach={outreach} />
                     </Col>
                 );
             })}

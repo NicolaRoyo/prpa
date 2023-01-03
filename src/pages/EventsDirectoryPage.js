@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useSelector } from 'react-redux';
 import { Container, Row, Col } from 'reactstrap';
-import OutreachDetail from '../features/events/OutreachDetail';
+import AnimatedOutreachDetail from '../features/events/AnimatedOutreachDetail';
 import OutreachList from '../features/events/OutreachList';
 import { selectOutreachById } from '../features/events/outreachSlice';
 
@@ -17,7 +17,7 @@ const EventsDirectoryPage = () => {
                     <OutreachList setOutreachId={setOutreachId} />
                 </Col>
                 <Col sm='7' md='5'>
-                    <OutreachDetail outreach={selectedOutreach} />
+                    <AnimatedOutreachDetail outreach={selectedOutreach} />
                 </Col>
             </Row>
 

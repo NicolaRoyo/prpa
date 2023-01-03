@@ -1,11 +1,11 @@
 import { useState, useEffect } from 'react';
-import { Card, CardImg, CardImgOverlay, CardTitle, CardSubtitle } from 'reactstrap';
+import { Card, CardImg, CardImgOverlay, CardTitle } from 'reactstrap';
 import { useSpring, animated  } from 'react-spring';
 
-const AnimatedBoardCard = ({board}) => {
-    const { image, name, position } = board;
+const AnimatedOutreachCard = ({outreach}) => {
+    const { image, name } = outreach;
     const [toggle, setToggle ] = useState(false);
-
+    
     const animatedStyle = useSpring({
         opacity: toggle ? 1 : 0,
         transform: toggle ? 'scale(1,1)' : 'scale(1,0)',
@@ -24,18 +24,12 @@ const AnimatedBoardCard = ({board}) => {
                     src={image}
                     alt={name}
                 />
-                <CardImgOverlay className="
-                    board-img-overlay 
-                    d-flex 
-                    flex-column 
-                    justify-content-end
-                ">
-                    <CardTitle className='board-card-title text-center'>{name}</CardTitle>
-                    <CardSubtitle className='board-card-subtitle text-center'>{position}</CardSubtitle>
+                <CardImgOverlay>
+                    <CardTitle>{name}</CardTitle>
                 </CardImgOverlay>
             </Card>
         </animated.div>
     );
 };
 
-export default AnimatedBoardCard;
+export default AnimatedOutreachCard;

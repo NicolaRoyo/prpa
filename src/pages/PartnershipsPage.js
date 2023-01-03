@@ -3,7 +3,7 @@ import { useSelector } from 'react-redux';
 import { Container, Row, Col } from 'reactstrap';
 import PartnershipsList from '../features/partnerships/PartnershipsList';
 import { selectPartnershipsById } from '../features/partnerships/partnershipsSlice';
-import PartnershipsDetail from '../features/partnerships/PartnershipsDetail';
+import AnimatedPartnershipsDetail from '../features/partnerships/PartnershipsDetail';
 import SubHeader from '../components/SubHeader';
 
 const PartnershipsPage = () => {
@@ -19,7 +19,7 @@ const PartnershipsPage = () => {
                     <PartnershipsList setPartnershipsId={setPartnershipsId} />
                 </Col>
                 <Col >
-                    <PartnershipsDetail partnerships={selectedPartnerships} />
+                    <AnimatedPartnershipsDetail partnerships={selectedPartnerships} />
                 </Col>
             </Row>
 

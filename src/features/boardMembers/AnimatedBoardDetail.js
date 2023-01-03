@@ -9,7 +9,7 @@ const AnimatedBoardDetail = ({ board }) => {
     const animatedStyle = useSpring({
         opacity: toggle ? 1 : 0,
         transform: toggle ? 'scale(1,1)' : 'scale(1,0)',
-        config: { duration: 500 }
+        config: { duration: 300 }
     });
 
     useEffect(() => {
@@ -18,7 +18,6 @@ const AnimatedBoardDetail = ({ board }) => {
 
     return (
         <Col md='11' className='m-1'>
-        {/* <Col md='5' className='m-4'> */}
             <animated.div style={animatedStyle}>
                 <Card>
                     <CardImg  src={image} alt={name} />
