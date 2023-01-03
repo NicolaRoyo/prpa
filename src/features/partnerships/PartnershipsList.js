@@ -6,7 +6,7 @@ import { selectAllPartnerships } from "./partnershipsSlice";
 
 const PartnershipsList = () => {
     const partnerships = useSelector(selectAllPartnerships);
-    console.log('partnerships:', partnerships);
+
     
     return (
         <Col className='mt-4'>

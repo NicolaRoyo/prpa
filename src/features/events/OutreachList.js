@@ -5,9 +5,7 @@ import { selectAllOutreach } from "./outreachSlice";
 
 const OutreachList = ({ setOutreachId }) => {
    const outreachEvents = useSelector(selectAllOutreach);
-   console.log('outreachEvents:', outreach);
-
-
+   
     return (
         <Row className='ms-auto'>
             {outreachEvents.map((outreach) => {

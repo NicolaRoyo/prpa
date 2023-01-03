@@ -5,7 +5,6 @@ import { selectAllBoard } from "./boardSlice";
 
 const BoardList = ({ setBoardId }) => {
    const boardMembers = useSelector(selectAllBoard);
-   console.log('board:', board);
    
     return (
         <Row className='ms-auto' >
