@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { Card, CardImg, CardImgOverlay, CardTitle } from 'reactstrap';
 import { useSpring, animated  } from 'react-spring';
 
-const AnimatedOutreachCard = ({outreach}) => {
+const AnimatedEventOutreachCard = ({outreach}) => {
     const { image, name } = outreach;
     const [toggle, setToggle ] = useState(false);
     
@@ -32,4 +32,4 @@ const AnimatedOutreachCard = ({outreach}) => {
     );
 };
 
-export default AnimatedOutreachCard;
+export default AnimatedEventOutreachCard;

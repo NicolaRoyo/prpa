@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 import { useSpring, animated } from 'react-spring';
 
 
-const AnimatedOutreachDetail = ({ outreach }) => {
+const AnimatedEventOutreachDetail = ({ outreach }) => {
     const { image, name, description } = outreach; 
     const [toggle, setToggle ] = useState(false);
 
@@ -31,4 +31,4 @@ const AnimatedOutreachDetail = ({ outreach }) => {
     );
 };
  
-export default AnimatedOutreachDetail;
+export default AnimatedEventOutreachDetail;

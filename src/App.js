@@ -3,7 +3,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
-import EventsDirectoryPage from './pages/EventsDirectoryPage';
+import EventDirectoryPage from './pages/EventDirectoryPage';
 import BoardMembersPage from './pages/BoardMembersPage';
 import PartnershipsPage from './pages/PartnershipsPage';
 import NewsPage from './pages/NewsPage';
@@ -20,7 +20,7 @@ function App() {
       <Routes> 
         <Route path='/' element={<HomePage />} />
         <Route path='about' element={<AboutPage />} />
-        <Route path='directory' element={<EventsDirectoryPage />} />
+        <Route path='directory' element={<EventDirectoryPage />} />
         <Route path='board_members' element={<BoardMembersPage />} />
         <Route path='partnerships' element={<PartnershipsPage />} />
         <Route path='news' element={<NewsPage />} />

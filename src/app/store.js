@@ -2,13 +2,13 @@ import { configureStore } from '@reduxjs/toolkit';
 import logger from 'redux-logger';
 import { boardReducer } from '../features/boardMembers/boardSlice';
 import { partnershipsReducer } from '../features/partnerships/partnershipsSlice';
-import { outreachReducer } from '../features/events/outreachSlice';
+import { eventOutreachReducer } from '../features/events/eventOutreachSlice';
 
 export const store = configureStore({
   reducer: {
     board: boardReducer,
     partnerships: partnershipsReducer,
-    outreach: outreachReducer
+    eventOutreach: eventOutreachReducer
   },
   middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat([logger])
 });

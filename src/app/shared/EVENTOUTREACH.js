@@ -2,7 +2,7 @@ import basketballGame1Img from '../assets/img/basketball-game1.jpg';
 import basketballGame2Img from '../assets/img/basketball-game2.jpg';
 import holidayCardsImg from '../assets/img/holidaycards.jpg';
 
-export const OUTREACH = [
+export const EVENTOUTREACH = [
     {
         id: 0,
         name: 'Basketball Game',

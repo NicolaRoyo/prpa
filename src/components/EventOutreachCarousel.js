@@ -3,7 +3,7 @@ import BasketBallGame from '../app/assets/img/basketball-game1.jpg';
 import BasketBallGame2 from '../app/assets/img/basketball-game2.jpg';
 import HolidayCards from '../app/assets/img/holidaycards.jpg';
 
-function OutreachCarousel() {
+function EventOutreachCarousel() {
     return (
       <Carousel fade className='carousel'>
         <Carousel.Item>
@@ -45,4 +45,4 @@ function OutreachCarousel() {
     );
   }
   
-  export default OutreachCarousel;
+  export default EventOutreachCarousel;
